@@ -1,4 +1,5 @@
 import React from "react"
+import { useState } from "react"
 
 const cards = [
   {
@@ -17,7 +18,22 @@ const cards = [
     link : 'https://www.combell.com/en/help/wp-content/uploads/5981c6d9f0f4baa8678b457f.png',
   },
 ]
+
+
+
+
 export default function Banner() {
+
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+    window.open("https://www.googleplay.com", "_blank");
+  }
+
+  const buttonText = isClicked ? "¡Gracias por Descargar!" : "Ver en Google Play";
+  const buttonClassName = isClicked ? "mt-6 bg-zinc-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg" : "mt-6 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg";
+  
   return (
     <div className="relative py-24 overflow-hidden bg-zinc-900 isolate sm:py-32">
       <img
@@ -44,10 +60,11 @@ export default function Banner() {
         </div>
 
         <button
+          onClick={handleClick}
           type="button"
-          className="py-4 mt-6 text-sm font-semibold text-white rounded-md shadow-sm bg-white/10 px-7 ring-1 ring-inset ring-white/10 hover:ring-green-500 hover:scale-105"
+          className={buttonClassName}
         >
-          Ver en Google Play
+          {buttonText}
         </button>
 
         <div className="grid max-w-2xl grid-cols-1 gap-6 mx-auto mt-16 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
