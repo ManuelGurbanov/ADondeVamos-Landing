@@ -67,7 +67,7 @@ export default function Banner() {
           {buttonText}
         </button>
 
-        <div className="grid max-w-2xl grid-cols-1 gap-6 mx-auto mt-16 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
+        <div className="grid max-w-[350px] grid-cols-1 gap-6 mx-auto mt-16 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
           {cards.map((card) => (
             <div key={card.name} className="flex p-6 m-auto transition gap-x-4 rounded-xl bg-white/5 ring-1 ring-inset ring-white/10 hover:ring-green-500">
               <div className="m-auto text-base leading-7">

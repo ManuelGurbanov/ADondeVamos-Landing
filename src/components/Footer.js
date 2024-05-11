@@ -1,8 +1,8 @@
 const navigation = {
     redes: [
-      { name: 'TikTok', href: '#' },
-      { name: 'Instagram', href: '#' },
-      { name: 'Google Play', href: '#' },
+      { name: 'TikTok', href: 'https://www.tiktok.com' },
+      { name: 'Instagram', href: 'https://www.instagram.com' },
+      { name: 'Google Play', href: 'https://www.googleplay.com' },
     ]
   }
   
@@ -27,7 +27,7 @@ const navigation = {
                   <ul role="list" className="mt-6 space-y-4">
                     {navigation.redes.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
+                        <a href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white" target="_blank" rel="noopener noreferrer">
                           {item.name}
                         </a>
                       </li>

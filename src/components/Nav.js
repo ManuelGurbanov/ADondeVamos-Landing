@@ -25,9 +25,10 @@ export default function Nav() {
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
             onClick={() => setMobileMenuOpen(true)}
           >
-          <h1
-                className="text-xl font-bold text-green-500">Menú
-           </h1>
+          <img
+                src="burguer.png"
+                className="w-12">
+           </img>
           </button>
         </div>
 
