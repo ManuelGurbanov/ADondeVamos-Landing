@@ -5,17 +5,17 @@ const cards = [
   {
     name: 'Opiná',
     description: 'Puntuá y opiná de los cafés.',
-    link : 'https://www.combell.com/en/help/wp-content/uploads/5981c6d9f0f4baa8678b457f.png',
+    link : 'https://i.ibb.co/pWCwp9Y/captura-boiro.jpg',
   },
   {
     name: 'Información',
     description: '¿Querés saber si es apto vegano? ¿o sin TAC?',
-    link : 'https://www.combell.com/en/help/wp-content/uploads/5981c6d9f0f4baa8678b457f.png',
+    link : 'https://i.ibb.co/tqWhLTD/captura-rese-a.jpg',
   },
   {
     name: 'Fotos',
     description: 'Incluye fotos del menú y fachada de los locales.',
-    link : 'https://www.combell.com/en/help/wp-content/uploads/5981c6d9f0f4baa8678b457f.png',
+    link : 'https://i.ibb.co/HPCqSKY/amelia.jpg',
   },
 ]
 

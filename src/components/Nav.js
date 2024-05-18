@@ -4,7 +4,7 @@ import Coffe from './Coffe'
 
 const navigation = [
   { name: 'Inicio', href: '#' },
-  { name: 'Ver en Google Play', href: '#' },
+  { name: 'Ver en Google Play', href: 'https://www.googleplay.com' },
 ]
 
 export default function Nav() {

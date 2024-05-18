@@ -7,6 +7,7 @@ import './index.css';
 
 import Nav from './components/Nav';
 import Banner from './components/Banner';
+import Banner2 from './components/Banner2';
 import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,6 +15,7 @@ root.render(
   <React.StrictMode>
     <Nav />
     <Banner />
+    <Banner2 />
     <Footer />
   </React.StrictMode>
 );
