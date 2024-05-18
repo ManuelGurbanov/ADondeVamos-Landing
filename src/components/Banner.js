@@ -3,19 +3,19 @@ import { useState } from "react"
 
 const cards = [
   {
-    name: 'Opiná',
-    description: 'Puntuá y opiná de los cafés.',
+    name: 'Pantalla Principal',
+    description: 'Deslizá para ver las cafeterías como en Tik Tok',
     link : 'https://i.ibb.co/pWCwp9Y/captura-boiro.jpg',
   },
   {
     name: 'Información',
     description: '¿Querés saber si es apto vegano? ¿o sin TAC?',
-    link : 'https://i.ibb.co/tqWhLTD/captura-rese-a.jpg',
+    link : 'https://i.ibb.co/HPCqSKY/amelia.jpg',
   },
   {
-    name: 'Fotos',
-    description: 'Incluye fotos del menú y fachada de los locales.',
-    link : 'https://i.ibb.co/HPCqSKY/amelia.jpg',
+    name: 'Dejá tu reseña',
+    description: '¿Te gustó el café? Comentalo!',
+    link : 'https://i.ibb.co/tqWhLTD/captura-rese-a.jpg',
   },
 ]
 
@@ -32,13 +32,14 @@ export default function Banner() {
   }
 
   const buttonText = isClicked ? "¡Gracias por Descargar!" : "Ver en Google Play";
-  const buttonClassName = isClicked ? "mt-6 bg-zinc-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg" : "mt-6 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg";
+  const buttonClassName = isClicked ? "mt-6 bg-coffe text-white font-semibold py-3 px-6 rounded-lg" : "mt-6 bg-b_coffe hover:bg-coffe text-white font-semibold py-3 px-6 rounded-lg";
   
   return (
     <div className="relative py-24 overflow-hidden bg-zinc-900 isolate sm:py-32">
       <img
         src="https://wallpapers.com/images/featured/cup-of-coffee-4tc627vmaw0tiqiv.jpg"
         className="absolute inset-0 object-cover object-right w-full h-full -z-10 md:object-center blur-md brightness-50"
+        alt="bg"
       />
 
       <div className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl">
@@ -67,9 +68,9 @@ export default function Banner() {
           {buttonText}
         </button>
 
-        <div className="grid max-w-[350px] grid-cols-1 gap-6 mx-auto mt-16 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
+        <div className="grid grid-cols-1 gap-6 mx-auto mt-16 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8 md:grid-cols-2">
           {cards.map((card) => (
-            <div key={card.name} className="flex p-6 m-auto transition gap-x-4 rounded-xl bg-white/5 ring-1 ring-inset ring-white/10 hover:ring-green-500">
+            <div key={card.name} className="flex p-6 ml-0 transition gap-x-4 rounded-xl bg-zinc-900 ring-1 ring-inset ring-coffe hover:ring-b_coffe sm:w-[200px] lg:w-[350px] h-[775px] ">
               <div className="m-auto text-base leading-7">
                 <img
                     src={card.link}

@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
-import Coffe from './Coffe'
 
 const navigation = [
   { name: 'Inicio', href: '#' },
@@ -20,14 +19,16 @@ export default function Nav() {
            </img>
         </div>
         <div className="flex lg:hidden">
-          <button
-            type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
-            onClick={() => setMobileMenuOpen(true)}
-          >
-          <img
-                src="burguer.png"
-                className="w-12">
+            <button
+              type="button"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
+              onClick={() => setMobileMenuOpen(true)}
+            >
+            <img
+                  src="burguer.png"
+                  className="w-9"
+                  alt='menu'
+            >      
            </img>
           </button>
         </div>
@@ -35,7 +36,7 @@ export default function Nav() {
 
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white hover:text-green-500">
+            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white hover:text-coffe">
               {item.name}
             </a>
           ))}
@@ -57,7 +58,7 @@ export default function Nav() {
             >
 
             <h1
-                  className="text-xl font-bold text-green-500">Cerrar
+                  className="text-xl font-bold text-coffe">Cerrar
             </h1>
 
             </button>
