@@ -32,7 +32,7 @@ export default function Banner() {
   }
 
   const buttonText = isClicked ? "¡Gracias por Descargar!" : "Ver en Google Play";
-  const buttonClassName = isClicked ? "mt-6 bg-coffe text-white font-semibold py-3 px-6 rounded-lg" : "mt-6 bg-b_coffe hover:bg-coffe text-white font-semibold py-3 px-6 rounded-lg";
+  const buttonClassName = isClicked ? "mt-6 bg-coffe text-white font-semibold py-3 px-6 rounded-lg" : "mt-6 bg-b_coffe hover:scale-105 transition duration-75 text-white font-semibold py-3 px-6 rounded-lg";
   
   return (
     <div className="relative py-24 overflow-hidden bg-zinc-900 isolate sm:py-32">
